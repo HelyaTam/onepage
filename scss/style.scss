@@ -1,0 +1,30 @@
+@use "./custom";
+
+/*--------------------------------------------------------------
+# INDEX STYLINGS --- WisePanda.fr 
+--------------------------------------------------------------*/
+
+@use "./sections/header";
+@use "./sections/onepage/hero-banner";
+@use "./sections/onepage/featured-services";
+@use "./sections/onepage/about";
+@use "./sections/onepage/clients";
+@use "./sections/onepage/cta";
+@use "./sections/onepage/onfocus";
+@use "./sections/onepage/features";
+@use "./sections/onepage/services";
+@use "./sections/onepage/testimonials";
+@use "./sections/onepage/faq";
+@use "./sections/onepage/portfolio";
+@use "./sections/onepage/team";
+@use "./sections/onepage/last-blog-posts";
+@use "./sections/onepage/contact";
+@use "./sections/footer";
+
+/*--------------------------------------------------------------
+# BLOG STYLINGS --- WisePanda.fr 
+--------------------------------------------------------------*/
+
+@use "./sections/blog/blog-home";
+@use "./sections/blog/blog-article";
+

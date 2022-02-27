@@ -1,0 +1,53 @@
+/*--------------------------------------------------------------
+# BREADCRUMBS COMPONENTS --- WisePanda.fr 
+--------------------------------------------------------------*/
+
+.breadcrumbs {
+  padding: 15px 0;
+  background: rgba(var(--color-secondary-rgb), 0.05);
+  min-height: 40px;
+  margin-top: 76px;
+  h2 {
+    font-size: 30px;
+    font-weight: 300;
+    margin: 0;
+  }
+  ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.875rem;
+    li {
+      + li {
+        padding-left: 10px;
+        &::before {
+          display: inline-block;
+          padding-right: 10px;
+          color: var(--color-secondary-light);
+          content: "/";
+        }
+      }
+    }
+  }
+}
+
+// Optimisation Responsive Web Design
+@media (max-width: 992px) {
+  .breadcrumbs {
+    .d-flex {
+      display: block !important;
+    }
+    h2 {
+      margin-bottom: 10px;
+      font-size: 1.5rem;
+    }
+    ol {
+      display: block;
+      li {
+        display: inline-block;
+      }
+    }
+  }
+}

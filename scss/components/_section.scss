@@ -1,0 +1,34 @@
+@use "./colors" as c;
+/*--------------------------------------------------------------
+# SECTION & SECTION-HEARDER COMPONENTS --- WisePanda.fr 
+--------------------------------------------------------------*/
+
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-header {
+  text-align: center;
+  padding-bottom: 40px;
+  text-transform: uppercase;
+  h2 {
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: c.$color-default;
+  }
+  p {
+    margin: 0 auto;
+    color: c.$color-secondary-light;
+  }
+}
+
+// Optimisation Responsive Web Design
+@media (min-width: 1280px) {
+  .section-header {
+    p {
+      max-width: 80%;
+    }
+  }
+}
